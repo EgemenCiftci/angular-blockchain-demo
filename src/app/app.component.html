@@ -2,15 +2,15 @@
 <button (click)="addData(data)">Add Data</button>
 <div *ngIf="datas.length > 0">
   <p>Data:</p>
-  <ul>
+  <ol start="0">
     <li *ngFor="let d of datas">{{ d }}</li>
-  </ul>
+  </ol>
 </div>
 <br />
 <button *ngIf="datas.length > 0" (click)="addBlock()">Add Block</button>
 <div *ngIf="getBlockHashes().length > 0">
   <p>Block Hashes:</p>
-  <ul>
+  <ol start="0">
     <li *ngFor="let h of getBlockHashes()">{{ h }}</li>
-  </ul>
+  </ol>
 </div>
